@@ -1,5 +1,5 @@
 @echo off
-set SVNPATH=C:\Users\viktor.ryabets\DESK\Для работы\SVN\Main\Scripts\
+set SVNPATH=C:\Git\1CMAIN\Main\Scripts\
 set PBACKUPDIR=\\dc-qufib\d$\Backup\
 set LBACKUPDIR=C:\FILEDATA\BACKS\
 set LFBNAME=QUFIBMonthDiff.bak

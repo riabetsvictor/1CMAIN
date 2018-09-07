@@ -7,7 +7,7 @@ set LOG="Z:\vcslog.txt"
 
 set PATHREPORTS="C:\Users\viktor.ryabets\DESK\Для работы\SVN\Production\Externals\ReportsExternal\"
 set PATHDATAPROC="C:\Users\viktor.ryabets\DESK\Для работы\SVN\Production\Externals\DataProcessorsExternal\"
-set PATHDPUNLOADEPF="C:\Users\viktor.ryabets\DESK\Для работы\SVN\Main\1CProjects\DataProcessorsExternal\ВыгрузитьОбработки.epf"
+set PATHDPUNLOADEPF="C:\Users\viktor.ryabets\DESK\Для работы\Обработки\OUTS\ВыгрузитьОбработки.epf"
 
 set svn="C:\Program Files\TortoiseSVN\bin\svn.exe"
 set SVNPATH="C:\Users\viktor.ryabets\DESK\Для работы\SVN\Production\*"
@@ -21,7 +21,7 @@ start "SVN Update" /wait %svn% update %SVNPATH%
 
 start /wait wmic process where "name='1cv8.exe'" call terminate
 timeout /T 5 /NOBREAK
-call "C:\Users\viktor.ryabets\DESK\Для работы\SVN\Main\Scripts\83_DelCach.bat">>%LOG%
+call "C:\Git\1CMAIN\Main\Scripts\83_DelCach.bat">>%LOG%
 
 start "" /wait %RUNCMD% DESIGNER /S%PATHIB% /DumpConfigToFiles %PATHDUMPIB% -Format Hierarchical /Out%LOG% -NoTruncate
 
